@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Aneri Gandhi Website</title>
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+         crossorigin="anonymous" />
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/style.css">
+         <script src="https://kit.fontawesome.com/44b235ba7a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link"> My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro" style="max-width: 1000px;">
+                Title: <strong>Computer Vision supported Car Recommerce Site</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Company: S20.AI</p>
+            <img src="img/project-01.jpeg" alt="computer vision image" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p>Car recommerce presents a variety of challenges, such as lower resolution images in inconsistent lighting, unstable videos, missed car features, and inaccurate pricing - issues that both sellers and buyers must deal with. Recognizing the transformative potential of Artificial Intelligence (AI), I embarked on a multifaceted approach aimed at mitigating these challenges by leveraging AI to improve overall user experience and ensure accurate vehicle representation.</p>
+            <p>I began an extensive image processing workflow that included background removal, image enhancement, and shadow addition. I meticulously compared the performance of advanced segmentation models such as MRCNN, Deep Lab, Unet, and the innovative Dichotomous after preprocessing the images. This method transformed the captured car videos into a studio-like setting, reducing issues caused by poor lighting and unstable captures.</p>
+            <p>Recognizing the importance of smaller natural occurances like shadow being an small but significant improvement in user experience, I explored two primary techniques: shadow segmentation and shadow generation. These methods aimed to create visually appealing and realistic shadows, addressing challenges associated with varying light settings during video capture.</p>
+            <p>For a seamless 360-degree viewing experience, I implemented a point tracking mechanism using a novel frame-to-part match approach. This innovation ensured that the user could smoothly navigate around the car, focusing on the part or feature closest to their current viewing frame.</p>
+            <p>To augment the information available to potential buyers, I integrated automatic feature detection mechanisms. This included depth estimation for approximate boot space volume and leg space calculations, providing users with valuable insights into the car's interior dimensions.</p>
+            <p>Furthermore, I trained part detection and damage detection models, contributing to a more comprehensive and accurate representation of the car's condition. These features not only addressed the challenge of missed car features but also enhanced the assessment of potential damages.</p>
+            <p>Through rigorous A/B testing, the pursuit of excellence extended to continuous experimentation and improvement of each deep learning model. This iterative process aimed to improve the models' performance and cater to the changing needs of Car Recommerce users and stakeholders.</p>
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:aneri@cs.toronto.edu" class="footer__link">aneri@cs.toronto.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://api.whatsapp.com/send?phone=12499892615">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aneri-manoj-gandhi/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/amg10">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Aneri Gandhi Website</title>
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+         crossorigin="anonymous" />
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/style.css">
+         <script src="https://kit.fontawesome.com/44b235ba7a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link"> My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro" style="max-width: 1000px;">
+                Title: <strong>Abstractive Text Summarization</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Company: Microsoft</p>
+            <img src="img/project-05.jpeg" alt="NLP image" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p>As an research intern at Knowledge Mining Team at Microsoft Research in the year 2020, I contributed to the Project Cortex. My primary responsibility was to address the challenge of producing abstractive summaries from bullet points, a task integral to the broader goal of providing detailed information about acronyms when hovering over them in a document. While my colleagues focused on implementing the full form and one-liner descriptions, my role involved exploring the feasibility of generating multi-line descriptions using state-of-the-art seq2seq models. </p>
+            <p>Multiline description meant that I had to summarize multiple definitions into a coherent paragraph. The unique challenge in the use case included the brevity of input text in the form of bullet points, demanding the compilation of limited information into cohesive summaries without repetition. The output was expected to be grammatically correct, logically structured, and non-repetitive.</p>
+            <p>Another hiccup was unavailability of training dataset. I delved into the use of various datasets, including DiscoFuse, and curated a custom dataset tailored to the specific requirements of our task. The objective was to fine-tune and compare the performance of candidate models, namely BERT, GPT-2, and BART.</p>
+            <p>Among the models explored, the BART un-tuned model stood out for delivering the best results in terms of logical and grammatically correct sentences. However, it exhibited a more extractive nature. On the other hand, the BERT model, when fine-tuned on DiscoFuse, showcased a higher level of abstraction but struggled with retaining facts, leading to repetitions that impacted the overall legibility of the summary.Both BART and BERT achieved similar Rouge scores, indicating substantial coverage of content and definitions. Notably, the BART fine-tuned experiment was anticipated to yield improved results based on the comparative enhancement observed in the fine-tuning of the BERT model, which is a partial module of the BART model.</p>
+            <p>In drawing conclusions from the experiments, it became evident that the multi-line definition task could benefit from an initial focus on multi-document abstractive summarization and sentence fusion. This strategic shift, from starting with individual definitions to fusing them, was proposed as a means of enhancing the overall production perspective.</p>
+            <p>In summary, my work involved an in-depth exploration of seq2seq models, the creation and fine-tuning of datasets, and the evaluation of model performances, leading to valuable insights for the ongoing development of Project Cortex.</p>
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:aneri@cs.toronto.edu" class="footer__link">aneri@cs.toronto.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://api.whatsapp.com/send?phone=12499892615">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aneri-manoj-gandhi/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/amg10">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

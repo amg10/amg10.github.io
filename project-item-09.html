@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Aneri Gandhi Website</title>
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+         crossorigin="anonymous" />
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/style.css">
+         <script src="https://kit.fontawesome.com/44b235ba7a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link"> My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro" style="max-width: 1000px;">
+                Title: <strong>Data Dictionary using Angular</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Company: Google</p>
+            <img src="img/project-09.jpeg" alt="covid19 image" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p>An internal tool ,Data Dictionary, was being designed to aid product area resource managers in understanding how each one out of thousands of metrics are calculated. They could also look for existing metrics to use instead of reinventing the wheel. </p>
+            <p>I started by understanding the codebase. This involved a comprehensive exploration of the backend systems, ensuring a profound understanding of data structures governing metric definitions and datamarts. This foundational knowledge was essential for the seamless integration of new frontend features</p>
+            <p>I partially implemented a detailed metric cards on internal pages using a side panel. Each metric had a dedicated card, offering at-a-glance information about its calculation methodology. This addition aimed to streamline the understanding of metric derivation for product area resource managers, without them having to navigate to a different page.</p>
+            <p>I also incorporated a guided tour. This interactive tour served as a hands-on introduction to the tool's functionalities. Tailored to be informative and accessible, the guided tour eased the onboarding process for users, particularly those unfamiliar with the system.</p>
+            <p>Additionally I also worked on creating a new webpage resembling a dictionary. This page allowed users to search for specific requirements and instantly retrieve related existing metrics. The goal was to centralize information, enabling users to explore and leverage existing metrics efficiently. </p>
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:aneri@cs.toronto.edu" class="footer__link">aneri@cs.toronto.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://api.whatsapp.com/send?phone=12499892615">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aneri-manoj-gandhi/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/amg10">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Aneri Gandhi Website</title>
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+         crossorigin="anonymous" />
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/style.css">
+         <script src="https://kit.fontawesome.com/44b235ba7a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link"> My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro" style="max-width: 1000px;">
+                Title: <strong>Bringing Spatial Flexiblity to Google Fleet</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Company: Google</p>
+            <img src="img/project-02.jpeg" alt="data center image" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p>Google Cloud wished to optimize the spatial flexibility across its fleet. Lower flexibility was hindering efficient resource allocation and increasing operational costs. The existing infrastructure lacked the ability to adapt dynamically to resource requirements, impacting the overall fungibility of resources.</p>
+            <p>The task assigned to me was to design a Proof of Concept (PoC) addressing this issue, focusing on both proactive (for all resources) and reactive (for just network bandwidth) approaches. The goal was to enhance spatial flexibility by efficiently managing resource availability and requirements.</p>
+            <p>For the proactive approach, my focus was on forecasting and efficiently managing resource availability and requirements within Google's fleet. I understood and combined the system that predicted resource availability, encompassing compute, storage, and network resources, the system that was anticipating resource requirements for jobs in specific data centers and the system that took in new additional resources that are newly brought yet to be included in the datacenter. This proactive forecasting allowed to predict the date when resource availability would fall below the requirements. Subsequently, I proposed a mechanism to notify relevant stakeholders and initiated the relocation of services to different data centers, ensuring optimal resource utilization and preventing potential disruptions.</p>
+            <p>In parallel, for the reactive approach, when a user initiates a service move request, I proposed a method to facilitate spatial flexibility within the fleet. First, I identified services that should be moved together, forming a move unit. Subsequently, I calculated the aggregated network usage of the move unit and estimated the approximate change in network usage, considering categories such as inter-cluster and intra-cluster changes. Using this information, I filtered destination locations based on network bandwidth availability and other resource criteria, ensuring a streamlined and efficient relocation process.</p>
+            <p>The implemented Proof of Concept successfully addressed the challenges posed by the lack of spatial flexibility in Google Cloud's fleet. The proactive approach ensured optimal resource utilization by forecasting and managing resource availability, while the reactive approach streamlined user-initiated service relocations.</p>
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:aneri@cs.toronto.edu" class="footer__link">aneri@cs.toronto.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://api.whatsapp.com/send?phone=12499892615">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aneri-manoj-gandhi/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/amg10">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

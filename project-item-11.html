@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Aneri Gandhi Website</title>
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+         crossorigin="anonymous" />
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/style.css">
+         <script src="https://kit.fontawesome.com/44b235ba7a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link"> My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro" style="max-width: 1000px;">
+                Title: <strong>Privacy-Preserving Generative Models</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">University of Toronto</p>
+            <img src="img/project-11.jpeg" alt="Privacy image" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p>In this project, I aimed addressed the growing concerns surrounding data protection in generative models, a crucial class of machine learning models extensively employed in artificial intelligence applications. These models, designed to learn and mimic patterns in data, have shown the inadvertent memorization of sensitive information, prompting the need for privacy measures. Differentially private algorithms have been proposed, but the inherent trade-off between privacy and data quality remains a significant challenge in the field.</p>
+            <p>To tackle this problem, I conducted a comparative analysis of differentially private generative models, focusing on Conditional Generative Adversarial Network (CGAN), Conditional Variational Autoencoder (CVAE), and the Diffusion Model. The study aimed to evaluate the impact of privacy budgets on data quality using various metrics, striving to determine the optimal model striking a balance between quality and privacy preservation.</p>
+            <p>The results revealed significant differences between outputs of the Generative Adversarial Network (GAN) and Variational Autoencoder (VAE). While GAN produced sharp images with visual clarity, VAE generated images with a higher degree of continuity and realism, albeit with some distortion. The study also explored Fréchet Inception Distance (FID) scores as a metric for gauging the realism of generated images. Notably, VAE consistently exhibited lower FID scores than GAN, positioning it as the preferred choice for realism.</p>
+            <p>The robustness against membership inference attacks was evaluated, and unexpected accuracy results raised concerns about potential TensorFlow API issues or overfitting. Despite this, the research demonstrated that non-differentially private generative models, specifically the Diffusion model, outperformed their counterparts in terms of data quality.</p>
+            <p>In conclusion, the project shed light on the delicate balance between privacy and accuracy in generative models. The results supported previous research findings, emphasizing the need for further investigation into optimal model selection for practical applications, considering training speed, resource requirements, and addressing open issues such as the limitations of existing metrics in capturing human judgment about data quality.</p>
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:aneri@cs.toronto.edu" class="footer__link">aneri@cs.toronto.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://api.whatsapp.com/send?phone=12499892615">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aneri-manoj-gandhi/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/amg10">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

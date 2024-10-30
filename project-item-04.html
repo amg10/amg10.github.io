@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Aneri Gandhi Website</title>
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+         crossorigin="anonymous" />
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/style.css">
+         <script src="https://kit.fontawesome.com/44b235ba7a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link"> My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro" style="max-width: 1000px;">
+                Title: <strong>Unsupervised Video Annotation</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">BTech Thesis</p>
+            <img src="img/project-04.jpeg" alt="object detection image" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p>Thesis: <a href="https://drive.google.com/file/d/1g9DKcpavVy3AnuHLU5S_BflMUK36P_bn/view?usp=sharing"></a>Unsupervised Object Detection for Automatic Video Annotation</p>
+            <p>In addressing the challenge of insufficient fully labeled data for custom categories in object detection, I undertook the task of creating an unsupervised automatic video annotation ML pipeline as my Bachelor's Thesis Project. The primary aim was to facilitate the annotation of unencountered objects in videos, leveraging general labels provided.</p>
+
+            <p>The pipeline follows a three-step approach for object detection, combining Objectness Detection, Clustering, and Identification. The first step involves training a Mask RCNN-based binary classifier to learn objectness, extracting information that generalizes well to new categories. Subsequently, features are extracted from the Regions of Interest (RoI) proposed by the classifier using the VGG16 network. These features are then subjected to k-mean clustering to group similar objects together.</p>
+            <p>Addressing the core issue of insufficient labeled data, the pipeline goes beyond the conventional reliance on fully labeled images with bounding box annotations. Instead, it taps into the abundance of weakly labeled images and videos, easily accessible through platforms like Google and YouTube. By automating the bounding box annotation process for videos, the pipeline can seamlessly extend its capabilities to images.</p>
+            <p>The theoretical foundation of the pipeline rests on the concept of image pyramids and the use of a binary classifier for high-level objectness detection. This approach capitalizes on the similarity in high-level features among different objects, enabling the model to detect objects even with a minimal set of labeled data.</p>
+            <p>Once an object is detected, the next challenge lies in correctly matching it to the given general label. This is addressed through the clustering of features and the assumption that the desired object is present in the majority of frames in a video. The clustering output, coupled with these assumptions, enables the identification of the object described by the general label.</p>
+            <p>The overall success of the pipeline is evident in achieving an 80% accuracy for unforeseen objects, a significant improvement from previous limitations. By combining objectness detection, feature extraction, and clustering, the model demonstrates its efficacy in providing bounding box annotations for object classes, even with weak labels for videos. The three sub-parts of the problem—Object extraction, Feature extraction, and Clustering/Object identification—are seamlessly integrated into a coherent and effective solution, addressing the challenges posed by the scarcity of fully labeled data.</p>
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:aneri@cs.toronto.edu" class="footer__link">aneri@cs.toronto.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://api.whatsapp.com/send?phone=12499892615">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aneri-manoj-gandhi/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/amg10">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

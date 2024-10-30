@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Aneri Gandhi Website</title>
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+         crossorigin="anonymous" />
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/style.css">
+         <script src="https://kit.fontawesome.com/44b235ba7a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link"> My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro" style="max-width: 1000px;">
+                Title: <strong>Chatbot for Complex Database Visualization</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Company: Google</p>
+            <img src="img/project-03.jpeg" alt="chatbot image" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p>In my role as the primary lead of a Chatbot project, I delved into the fascinating field of Natural Language Querying (NLQ) with a specific focus on addressing the compute and storage resource allocation/usage queries within various product area teams. The goal was to create a user-friendly interface that eliminated the need for team members to grapple with intricate SQL queries or be limited to default graphs.</p>
+            <p>Our team successfully developed the initial version of the chatbot using Dialogflow. However, our exploration didn't stop there. We diligently studied various NLQ engines, including the likes of Tapas, to create a proof of concept (POC) around extending their capabilities to suit our specific use case.</p>
+            <p>One of the challenges we encountered was dealing with multiple tables and determining the probability of answers lying within each table. The complexity further heightened when considering whether a join operation between tables was necessary. Additionally, the traditional Text-to-SQL approach posed issues, as it either catered to simple, non-nested databases or required parsing the entire table for models retrieving answers, which proved unsuitable for big data. While these challenges remain open problems, we opted for a pragmatic approach for a very specific internal use case.</p>
+            <p>My involvement in this project consisted of several key steps:</p>
+            <ol>
+                <li>
+                    Exploration of NLQ Engines: I conducted a thorough exploration of multiple NLQ engines, evaluating their strengths and weaknesses to find the most suitable solution for our project.
+                </li>
+                <li>
+                    Story Creation in Dialogflow: I actively contributed to the creation of stories, essentially user journeys, within Dialogflow. These stories served as the foundation for the chatbot's interactions with users, providing a structured and intuitive experience.
+                </li>
+                <li>
+                    Chatbot Implementation and Integration: I took a hands-on approach in implementing parts of the final chatbot. This involved coding and integrating the chatbot with Google Chat, ensuring a seamless user experience for teams seeking information on compute and storage resource allocation/usage.
+                </li>
+            </ol>  
+            <p>In summary, our journey involved a meticulous exploration of NLQ engines, thoughtful story creation in Dialogflow, and the practical implementation of a chatbot tailored to meet the specific needs of product area teams. While challenges persist in the NLQ field, our solution represents a tailored and effective response to a particular set of internal requirements.</p>
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:aneri@cs.toronto.edu" class="footer__link">aneri@cs.toronto.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://api.whatsapp.com/send?phone=12499892615">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aneri-manoj-gandhi/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/amg10">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

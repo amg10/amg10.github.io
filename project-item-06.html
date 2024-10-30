@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Aneri Gandhi Website</title>
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+         crossorigin="anonymous" />
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="css/style.css">
+         <script src="https://kit.fontawesome.com/44b235ba7a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link"> My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro" style="max-width: 1000px;">
+                Title: <strong>3D Rendering of Resale Cars</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Company: S20.AI</p>
+            <img src="img/project-06.jpeg" alt="Nerf image" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p><a href="https://drive.google.com/file/d/1yt7Smr6_0mn9i-ImxldZZ4Vj0MoFc4Y6/view?usp=sharing">Demo</a></p>
+            <p>If there are no proper images/videos and appropriate descriptions for any second hand products, buying any such item online or even shortlisting such item, be it as small as a mobile to as large as a house, becomes difficult. It would be fantastic from the standpoint of user experience to be able to see a 3D model.</p>
+            <p>My initial foray into this domain involved a thorough investigation of various methods for generating 3D models from images, including Penoxels and different types of neural radiance fields (NeRF). I sought to understand the strengths and weaknesses of each approach to make an informed decision for our specific use case.</p>
+            <p>To optimize the quality of the 3D models, I performed data transformations such as background removal. This step was essential in obtaining cleaner and more accurate representations of the products, ensuring a visually appealing and informative 3D visualization.</p>
+            <p>A pivotal aspect of my work was conducting a comparative analysis of the different models, considering factors like rendering speed and compute requirements. Given the need for fast rendering within minutes and lower computational demands, I ultimately selected InstantNeRF as the most suitable solution for our pipeline.</p>
+            <p>In parallel, I explored an alternative approach involving the use of existing 3D objects created for cars. The idea was to leverage these pre-existing models and enhance them through texture transfer. However, after a thorough analysis, it became evident that this approach suffered from lower performance compared to the chosen InstantNeRF solution.</p>
+            <p>In conclusion, my work encompassed a meticulous exploration of 3D modeling techniques, data transformations for model optimization, and a comprehensive analysis leading to the selection of InstantNeRF for our high-resolution 3D visualization pipeline. This endeavor was driven by the commitment to improving the user experience for individuals navigating resale e-commerce platforms, providing them with a more immersive and informative way to interact with products online.</p>
+        </div>
+
+                
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:aneri@cs.toronto.edu" class="footer__link">aneri@cs.toronto.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://api.whatsapp.com/send?phone=12499892615">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/aneri-manoj-gandhi/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/amg10">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
